@@ -6,7 +6,7 @@ import streamlit as st
 from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.output_parsers import StrOutputParser, JsonOutputParser
-from langchain_classic.memory import ConversationBufferWindowMemory
+from langchain.memory import ConversationBufferWindowMemory
 
 # Streamlit page  -> Configures the browser tab and shows the main heading.
 st.set_page_config(page_title="AI Chat Assistant", page_icon="🤖")
