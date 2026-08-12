@@ -1,21 +1,12 @@
 # Chaatbot using Streamlit
 
-import os
 import streamlit as st
-from dotenv import load_dotenv
 # streamlit → create the web app UI
 
 from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.output_parsers import StrOutputParser, JsonOutputParser
 from langchain_classic.memory import ConversationBufferWindowMemory
-
-# Load API key
-load_dotenv()
-
-api_key = os.getenv("GROQ_CHATBOT_KEY")
-
-# print(os.getenv("GROQ_CHATBOT_KEY"))
 
 # Streamlit page  -> Configures the browser tab and shows the main heading.
 st.set_page_config(page_title="AI Chat Assistant", page_icon="🤖")
@@ -29,14 +20,12 @@ Be concise and technical. Give code examples when helpful.
 """
 
 llm = ChatGroq(
-    api_key=api_key,
     model="llama-3.3-70b-versatile",
     temperature=0.7,
     max_retries=3
 )
 
 eval_llm = ChatGroq(
-    api_key=api_key,
     model="llama-3.3-70b-versatile",
     temperature=0.1,
     max_retries=3
