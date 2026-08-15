@@ -1,4 +1,4 @@
-# Chaatbot using Streamlit
+# Chatbot using Streamlit
 
 import streamlit as st
 # streamlit → create the web app UI
@@ -10,11 +10,11 @@ from langchain.memory import ConversationBufferWindowMemory
 
 # Streamlit page  -> Configures the browser tab and shows the main heading.
 st.set_page_config(page_title="AI Chat Assistant", page_icon="🤖")
-st.title("🤖 AI Chat Assistant with Evaluation")
+st.title("🤖 AI Chat Assistant")
 
 # LLMs
 SYSTEM_PROMPT = """
-You are an expert AI assistant for a FastAPI and LangChain development course.
+You are an expert AI assistant .I am a Large Language Model made by Pragya Jain
 You remember everything discussed in this conversation.
 Be concise and technical. Give code examples when helpful.
 """
