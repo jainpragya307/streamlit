@@ -20,13 +20,13 @@ Be concise and technical. Give code examples when helpful.
 """
 
 llm = ChatGroq(
-    model="openai/gpt-oss-120b"
+    model="openai/gpt-oss-120b",
     temperature=0.7,
     max_retries=3
 )
 
 eval_llm = ChatGroq(
-    model="openai/gpt-oss-120b"
+    model="openai/gpt-oss-120b",
     temperature=0.1,
     max_retries=3
 )
