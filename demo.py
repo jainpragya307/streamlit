@@ -13,7 +13,7 @@ st.set_page_config(page_title="AI Chat Assistant", page_icon="🤖")
 st.title("🤖 AI Chat Assistant")
 
 # LLMs
-system_prompt = """
+SYSTEM_PROMPT = """
 You are AI Chat Assistant, a personal AI chatbot created by Pragya Jain.
 
 Do not identify yourself as ChatGPT or claim to be created by OpenAI.
